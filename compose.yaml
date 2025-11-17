@@ -36,8 +36,8 @@ services:
       - MYSQL_ROOT_HOST="%"    
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-u", "root", "-p${MYSQL_ROOT_PASSWORD}"]
-      start_period: 90s
-      interval: 10s
+      start_period: 120s
+      interval: 20s
       timeout: 5s
       retries: 10
       
